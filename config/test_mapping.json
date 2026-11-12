@@ -1,0 +1,17 @@
+{
+  "test_mapping": {
+    "src/auth.py": ["tests/test_auth.py"],
+    "src/payment.py": ["tests/test_payment.py"],
+    "src/cart.py": ["tests/test_cart.py"]
+  },
+  "shared_files": [
+    "src/__init__.py",
+    "tests/**",
+    "router/**",
+    "config/**",
+    ".github/**",
+    "requirements.txt",
+    "pytest.ini",
+    "README.md"
+  ]
+}
