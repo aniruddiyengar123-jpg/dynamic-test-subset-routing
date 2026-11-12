@@ -51,5 +51,6 @@ source file. Add shared or high-impact files to `shared_files` so they trigger
 the full suite. Paths use forward slashes and are relative to the repository
 root. Every mapped test file must exist under `tests/`.
 
-The GitHub Actions workflow runs the router for pull requests, comparing the
-PR base revision with the checked-out commit.
+GitHub Actions runs the complete test suite (`python -m pytest -q`) on pushes
+to `main` and on pull requests targeting `main`. The local router remains
+available for selecting a focused subset when comparing Git revisions.
